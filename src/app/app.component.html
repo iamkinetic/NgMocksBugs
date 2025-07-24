@@ -1,4 +1,3 @@
-
 <main class="main">
 
     <cauca-test-component-with-classic-input id="one" value="test1" />
@@ -8,6 +7,20 @@
     <app-internal-with-classic-input-component value="four" />
     <app-internal-with-signal-input-component value="five" />
     <app-internal-with-model-input-component value="six" />
+
+    <!-- Content projection example with ContentChild and ContentChildren -->
+    <app-content-container containerTitle="Demo Content Container">
+        <app-content-item featured title="Featured Article"
+            description="This is a featured content item that should be detected by ContentChild">
+        </app-content-item>
+
+        <app-content-item title="Regular Item 1"
+            description="This is a regular content item that should be in ContentChildren">
+        </app-content-item>
+
+        <app-content-item title="Regular Item 2" description="Another regular content item for testing ContentChildren">
+        </app-content-item>
+    </app-content-container>
 
 </main>
 
