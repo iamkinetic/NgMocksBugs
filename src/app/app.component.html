@@ -9,6 +9,25 @@
     <app-internal-with-signal-input-component value="five" />
     <app-internal-with-model-input-component value="six" />
 
+    <app-internal-with-output-signal-component
+      (valueChange)="onValueChange($event, 'output-signal')"
+      (customEvent)="onValueChange($event.toString(), 'custom-event')" />
+
+      <app-internal-with-content-child-component>
+      <div #childRef>Content Child Reference</div>
+      <div #namedChild>Named Content Child</div>
+    </app-internal-with-content-child-component>
+
+    <app-internal-with-content-children-component>
+      <div #itemRef>Content Item 1</div>
+      <div #itemRef>Content Item 2</div>
+      <div #namedItem>Named Content Item 1</div>
+      <div #namedItem>Named Content Item 2</div>
+    </app-internal-with-content-children-component>
+
+    <app-internal-with-view-child-component />
+    <app-internal-with-view-children-component />
+
 </main>
 
 <router-outlet />

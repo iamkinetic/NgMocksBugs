@@ -22,7 +22,7 @@
     "@angular/router": "^19.2.0",
     "@cauca-911/core": "^19.0.0",
     "@cauca-911/material": "^19.0.4",
-    "ng-mocks": "^14.13.4",
+    "ng-mocks": "https://github.com/Watercycle/ng-mocks/releases/download/v14.14.0/ng-mocks-0.0.0.tgz",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
